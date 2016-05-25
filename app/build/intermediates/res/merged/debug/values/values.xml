@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Camera Mouth Face Detection</string>
+    <string name="camera_not_found">Camera not found</string>
+    <string name="hello">Hello World, Camera Mouth Detection Activity!</string>
+</resources>

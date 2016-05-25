@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/surfacelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <com.example.android.camera.CameraPreview
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/surface_view"
+            android:layout_weight="1">
+        </com.example.android.camera.CameraPreview>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView"
+            android:layout_weight="1"
+            android:src="@drawable/img_default" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_face_detection"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StartFaceDetection"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:layout_marginLeft="158dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crop"
+        android:id="@+id/btn_crop"
+        android:layout_alignTop="@+id/btn_face_detection"
+        android:layout_toRightOf="@+id/btn_face_detection" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:layout_marginBottom="50dp">
+
+        <com.example.android.camera.ViewFinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="#0000"
+            android:layout_weight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_row="0" />
+    </LinearLayout>
+
+</RelativeLayout>
+
